@@ -1,0 +1,22 @@
+# create the magic number:
+magic_number = 777
+
+# setup count to zero:
+count = 0
+
+# ask user for input number:
+user_number = int(input())
+
+# create while loop:
+while user_number != magic_number:
+    # create logic if the user does not guess the correct number:
+    if user_number != magic_number:
+        # print statement:
+        print("Sorry! Please try another number!")
+        # add 1 to each try:
+        count+=1
+        # have the user enter another number:
+        user_number = int(input())
+    # create logic if the user does guess the correct number:
+    if user_number == magic_number:
+        print("Great Job! You guessed the correct number in " + str(count) + " tries!")
